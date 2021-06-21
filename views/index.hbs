@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Weather app</title>
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+
+ {{>navbar}}
+
+    <!-- NAVBAR END -->
+
+    <section id="container" class="d-flex">
+        <div class="left-box d-flex align-items-center justify-content-center flex-column">
+            <div class="left">
+                <p>Welcome To Weather App</p>
+                {{!-- <h1 class="mb-5">Get The Latest <span class="text-primary">Weather</span> Info Of Your City</h1> --}}
+                <h1 class="mb-5">To Check The Current <span class="text-primary">Weather</span> Info Of My City</h1>
+                <button type="button" class="btn btn-outline-dark"><a href="/weather">Check Now</a> </button>
+            </div>
+        </div>
+        <div class="right-box d-flex align-items-center justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/bg3.png" class="w-100" alt="BG-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bg2.png" class="w-100" alt="BG-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bg1.png" class="w-100" alt="BG-img">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+ {{>footer}}
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+   
+
+
+</body>
+
+</html>
